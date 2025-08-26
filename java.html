@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let box = 156;
+      //   let box2 = 13456;
+      //   console.log(box % 10);
+      //   console.log(box2 / 100);
+      //   let answer = box2 / 100;
+      //   console.log(answer / 10);
+      //   console.log(answer / 10 / 10);
+
+      // let box3 = 3612;
+
+      // let hour = (box3 - (box3 % 3600)) / 3600;
+      // let minute = ((box3 % 3600) - (box3 % 60)) / 60;
+      // let second = box3 % 60;
+
+      // console.log(hour, minute, second);
+
+      // let box = 4589;
+
+      // let hour1 = (box - (box % 3600)) / 3600;
+      // let minute1 = ((box % 3600) - (box % 60)) / 60;
+      // let second1 = box % 60;
+      // console.log(hour1, minute1, second1);
+
+      // let b = 123;
+      // console.log(Math.floor((b % 100) / 10));
+      // let q = Math.floor(b / 100);
+      // let w = b % 10;
+      // let r = Math.floor(b / 10) % 10;
+      // console.log(q + w + r);
+
+      // let c = 27;
+      // let d = Math.floor(c * 0.1);
+      // let e = c % 10;
+      // console.log(d * e);
+
+      // let f = 200;
+      // let minute2 = (f - (f % 60)) / 60;
+      // let second2 = f % 60;
+      // console.log(minute2, second2);
+
+      // let box4 = 27;
+      // let year = Math.floor(box4 / 12);
+      // let month = box4 % 12;
+      // console.log(year, month);
+
+      // let box5 = 3678;
+
+      // let hour3 = (box5 - (box5 % 3600)) / 3600;
+      // let minute3 = ((box5 % 3600) - (box5 % 60)) / 60;
+      // let second3 = box5 % 60;
+      // console.log(hour3, minute3, second3);
+
+      // let box6 = 9877;
+      // let hour4 = (box6 - (box6 % 3600)) / 3600;
+      // let minute4 = ((box6 % 3600) - (box6 % 60)) / 60;
+      // let second4 = box6 % 60;
+      // console.log(hour4, minute4, second4);
+      // let box7 = 2820;
+      // let minute5 = box7 / 60;
+      // console.log(minute5);
+
+      // 1. Өгөгдсөн тоо нь 5-д хуваагддаг үгүйг шалгана уу.
+      // let number = 25;
+      // if (number % 5 == 0) {
+      //   console.log("Тоо 5-д хуваагддаг");
+      // } else {
+      //   console.log("Тоо 5-д хуваагддаггүй");
+      // }
+      // 2. Өгөгдсөн үсгийг шалгаад эгшиг бол "vowel" , гийгүүлэгч бол "consonant" гэж хэвлэнэ үү .
+      // let letter = "a";
+
+      // if (
+      //   letter == "a" ||
+      //   letter == "e" ||
+      //   letter == "i" ||
+      //   letter == "o" ||
+      //   letter == "u"
+      // ) {
+      //   console.log("vowel");
+      // } else {
+      //   console.log("consonant");
+      // }
+      // // 3. Өгөгдсөн тоо 1-ээс 100-н хооронд байвал "include" , байхгүй бол "exclude" гэж хэвлэнэ үү .
+      // let number2 = 78;
+      // if (number2 == 78 || number2 == 1 - 100) {
+      //   console.log("include");
+      // } else {
+      //   console.log("exclude");
+      // }
+      // // 4. 3 тооноос хамгийн ихийг нь олж хэвлэнэ үү .
+      // let a = 178;
+      // let b = 100;
+      // let c = 17;
+      // if (a < b && c < b) {
+      //   console.log("b");
+      // } else if (a > b && a > c) {
+      //   console.log("a");
+      // } else {
+      //   console.log("c");
+      // }
+
+      // // 5. Өгөгдсөн жил нь Олимпийн жил мөн бишийг шалгаад хэвлэнэ үү .
+      // let year = 2023;
+      // if (year >= 1896 && year <= 2024 && year % 4 == 0) {
+      //   console.log(true);
+      // } else {
+      //   console.log(false);
+      // }
+
+      // let number3 = 11;
+      // if (
+      //   number3 % number3 == 0 &&
+      //   number3 % 1 == number3 &&
+      //   number3 % 2 == 0
+      // ) {
+      //   console.log(true);
+      // }
+      // {
+      //   console.log(false);
+      // }
+
+      // 8. Өгөгдсөн сурагчийн дүнг A , B , C , D , F бүлэгт ангилж хэвлэнэ үү .
+      // let score = 95;
+      // if (score < 100 && score >= 80) {
+      //   console.log("A");
+      // } else if (score < 89 && score >= 70) {
+      //   console.log("B");
+      // } else if (score < 69 && score >= 60) {
+      //   console.log("C");
+      // } else if (score < 59 && score >= 50) {
+      //   console.log("D");
+      // } else if (score < 49 && score >= 0) {
+      //   console.log("F");
+      // }
+
+      // // // / 9. Өгөгдсөн сарыг шалгаад тохирох улирлыг хэвлэнэ үү .
+
+      // let month = "september";
+      // if (month == "january" || month == "february" || month == "december") {
+      //   console.log("winter");
+      // } else if (month == "march" || month == "april" || month == "may") {
+      //   console.log("spring");
+      // } else if (month == "june" || month == "july" || month == "august") {
+      //   console.log("summer");
+      // } else if (
+      //   month == "september" ||
+      //   month == "october" ||
+      //   month == "november"
+      // ) {
+      //   console.log("autumn");
+      // }
+
+      // // // 10. Яг одоогийн цагийг шалган өглөө бол "Good morning", өдөр бол "Good afternoon", орой бол "Good evening" гэж хэвлэнэ үү .
+      // let hour = "11";
+      // if (hour == "10" || hour == "11" || hour == "9" || hour == "12") {
+      //   console.log("good morning");
+      // } else if (
+      //   hour == "16" ||
+      //   hour == "15" ||
+      //   hour == "14" ||
+      //   hour == "13" ||
+      //   hour == "17"
+      // ) {
+      //   console.log("good afternoon");
+      // } else if (
+      //   hour == "18" ||
+      //   hour == "21" ||
+      //   hour == "20" ||
+      //   hour == "19" ||
+      //   hour == "22" ||
+      //   hour == "23" ||
+      //   hour == "24"
+      // ) {
+      //   console.log("good evening");
+      // }
+      // 11. Цаг агаарын температур болон "sunny" эсвэл "rainy" гэж өгөгдөх ба бороотой бол "Don't forget your umbrella!" ,
+      // нартай бол температур нь 30-аас их бол "It's a hot day!" , 20-30 градус бол "It's a warm day" , 20-оос бага бол "It's a bit cool today" гэж хэвлэнэ үү .
+      // for example : weather = "sunny" temperature = 25 / It's a warm day.
+      // let wheater = "sunny";
+      // let temperature = 32;
+      // if (wheater == "rainy") {
+      //   console.log("don't forget to take an umbrella");
+      // } else if (
+      //   wheater == "sunny" ||
+      //   (temperature >= 20 && temperature <= 30)
+      // ) {
+      //   console.log("it's warm day");
+      // } else if (wheater == "sunny" || temperature < 19) {
+      //   console.log("it's a bit cold day");
+      // } else if (wheater == "sunny" || temperature > 31) {
+      //   console.log("it's hot day");
+      // }
+      //  Хоёр тооны их
+
+      // let number4 = 18;
+      // let number5 = 19;
+      // if (number4 < number5) {
+      //   console.log("number5");
+      // } else if (number4 > number5) {
+      //   console.log("number4");
+      // }
+
+      //  4 тооны бага
+
+      // let s = 5;
+      // let d = 2;
+      // let f = 3;
+      // let g = 4;
+      // if (s < d && s < f && s < g) {
+      //   console.log("s");
+      // } else if (d < f && d < g) {
+      //   console.log("d");
+      // } else if (f < g) {
+      //   console.log("f");
+      // } else {
+      //   console.log("g");
+      // }
+
+      //  Нийлбэр 80
+
+      // let number6 = 82;
+      // let number7 = 85;
+      // let number8 = 98;
+      // let number9 = 92;
+      // let z = 0;
+      // if (number6 >= 80 && number6 <= 89) {
+      //   z += number6;
+      // }
+      // if (number7 >= 80 && number7 <= 89) {
+      //   z += number7;
+      // }
+      // if (number8 >= 80 && number8 <= 89) {
+      //   z += number8;
+      // }
+      // if (number9 >= 80 && number9 <= 89) {
+      //   z += number9;
+      // }
+      // console.log(z);
+
+      // Тэнцүү 5
+
+      // let number11 = 3;
+      // let number12 = 4;
+      // let number13 = 5;
+      // let number14 = 5;
+      // let equal = number12 == 5;
+      // let equal1 = number11 == 5;
+      // let equal2 = number13 == 5;
+      // let equal3 = number14 == 5;
+      // console.log(equal + equal1 + equal2 + equal3);
+
+      // const nums = [3, 9, 17];
+      // let num = 0;
+      // for (let i = 0; i < nums.length; i++) {
+      //   nums[i % 3 == 3];
+      // }
+      // console.log(nums);
+      //  11-д хуваагддаггүй
+      // let h = 7;
+      // let j = 22;
+      // let k = 55;
+      // let l = 23;
+      // let m = 0;
+      // if (h % 11 != 0) {
+      //   m += h;
+      // }
+      // if (j % 11 != 0) {
+      //   m += j;
+      // }
+      // if (k % 11 != 0) {
+      //   m += k;
+      // }
+      // if (l % 11 != 0) {
+      //   m += l;
+      // }
+      // console.log(m);
+
+      // let t = 12;
+      // let r = 11;
+      // let e = 8;
+      // let w = 0;
+      // if (t % 2 == 0) {
+      //   w += t;
+      // }
+      // if (r % 2 == 0) {
+      //   w += r;
+      // }
+      // if (e % 2 == 0) {
+      //   w += e;
+      // }
+      // console.log(w);
+
+      // let q = 11;
+      // let w = 17;
+      // let e = 12;
+      // let t = 0;
+      // if (q / 2 == 0) {
+      //   t *= q;
+      // }
+      // if (w / 2 == 0) {
+      //   t *= w;
+      // }
+      // if (e % 2 == 0) {
+      //   t *= e;
+      // }
+      // console.log(w);
+      // let number24 = 15;
+      // if (number24 >= 10) {
+      //   console.log("yes");
+      // } else {
+      //   console.log("no");
+
+      //  Эхний n тооны нийлбэр
+      // const a = 5;
+      // let sum = 0;
+      // for (let i = 1; i <= a; i++) {
+      //   sum = sum + i;
+      // }
+      // console.log(sum);
+
+      //  3-д хуваагдах
+      // let a = [3, 12, 15, 9];
+      // let cnt = 0;
+      // for (let i = 0; i < 4; i++) {
+      //   if (a[i] % 3 == 0) {
+      //     cnt++;
+      //   }
+      // }
+      // console.log(cnt);
+
+      // let a = [6, 9, 2];
+      // sum = 0;
+      // for (let i = 0; i < 3; i++) {
+      //   if (a[i] % 3 == 0) {
+      //     sum++;
+      //   }
+      // }
+      // console.log(sum);
+
+      // let a = 2;
+      // let b = 4;
+      // if (a > b) {
+      //   console.log(a);
+      // } else if (b > a) {
+      //   console.log(b);
+      // }
+      //  100-г n удаа нэм
+      // const a = 6;
+      // let b = 100;
+      // for (let i = 1; i < a; i++) {
+      //   b = b + 100;
+      // }
+      // console.log(b);
+
+      // const a = 7;
+      // sum = 100;
+      // for (let i = 1; i < a; i++) {
+      //   sum = sum + 100;
+      // }
+      // console.log(sum);
+
+      // let a = [55, 22, 10, 7];
+      // sum = 0;
+      // for (let i = 0; i < 4; i++) {
+      //   if (a[i] % 11 != 0) {
+      //     sum += a[i];
+      //   }
+      // }
+      // console.log(sum);
+
+      //  a тооны n зэрэг
+      // let a = 6;
+      // let b = 50;
+      // for (let i = 1; i < a; i++) {
+      //   b = b + 50;
+      // }
+      // console.log(b);
+      //  2-ын n зэрэг
+      // let a = 5;
+      // let b = 2;
+      // for (let i = 1; i < a; i++) {
+      //   b = b * 2;
+      // }
+      // console.log(b);
+
+      // let a = 4;
+      // let b = 3;
+      // for (let i = 1; i < a; i++) {
+      //   b = b * 3;
+      // }
+      // console.log(b);
+
+      // let a = 4;
+      // if (a > 3) {
+      //   console.log("tentssen");
+      // } else if (a < 3) {
+      //   console.log("unasan");
+      // }
+
+      // let a = 10;
+      // let sum = 3;
+      // for (let i = 1; i <= 10; i++) {
+      //   console.log(i * sum);
+      // }
+
+      // const nums = [50, 6];
+      // let sum = 0;
+      // for (let i = 0; i < 2; i++) {
+      //   sum = sum * i;
+      // }
+      // console.log(sum);
+      //  n!
+      //       let a = 5;
+      //       let b = 1;
+      //       for (let i = 1; i <= 5; i++) {
+      //         b = b * i;
+      //       }
+      //       console.log(b);
+
+      // let a = 5;
+      // let b = 3;
+      // for (let i = 1; i <= 5; i++) {
+      //   console.log((i * b) ** 2);
+      // }
+
+      // let baringiinDawhriinToo = 5;
+      // let negDawhartbaidagailiintoo = 4;
+      // let nomer = 10;
+      // const dawhariinDugaar = Math.ceil(nomer / negDawhartbaidagailiintoo);
+      // const hedDehAilwe = nomer % negDawhartbaidagailiintoo;
+
+      // let a = 5;
+      // let b = 4;
+      // let c = 10;
+      // const num = Math.ceil(c / 4);
+      // const nums = Math.ceil(c % 4);
+      // console.log(num, nums);
+
+      // let a = 5;
+      // let b = 3;
+      // let c = 4;
+      // let d = 32;
+      // const num = Math.ceil(d / (c * a));
+      // const nums = d % (c * a);
+      // const sum = Math.ceil(nums / c);
+      // const number = nums % c;
+      // console.log(num, sum, number);
+
+      //       let a = 9;
+      //       let answer;
+      //       answer = ((a + 1) * (a + 1)) / 2 / 2;
+      //       console.log(answer);
+
+      //  Ахмад орны цифр
+      // let x = 2345;
+      // let y = 0;
+      // while (x > 0) {
+      //   a = x % 10;
+      //   y = a;
+      //   x = (x - a) / 10;
+      // }
+      // console.log(y);
+
+      //  Тэгш цифрүүдийн нийлбэр
+      // let a = [34567];
+      // let b = Math.floor(a / 10000);
+      // let c = Math.ceil(a / 10000);
+      // let da = Math.floor(a % 1000) / 100;
+      // let d = Math.floor(da);
+      // let ea = Math.floor(a % 100) / 10;
+      // let e = Math.floor(ea);
+      // let f = Math.floor(a % 10);
+      // let sum = 0;
+      // if (b % 2 == 0) {
+      //   sum += b;
+      // }
+      // if (c % 2 == 0) {
+      //   sum += c;
+      // }
+      // if (d % 2 == 0) {
+      //   sum += d;
+      // }
+      // if (e % 2 == 0) {
+      //   sum += e;
+      // }
+      // if (f % 2 == 0) {
+      //   sum += f;
+      // }
+      // console.log(sum);
+
+      //  Цифрийн давталт
+      // let a = 3446;
+      // sum = 0;
+      // while (a > 0) {
+      //   let num = a % 10;
+      //   sum[num]++;
+      //   a = Math.floor(a / 10);
+      // }
+      // console.log(sum);
+
+      // Niilber1
+
+      // let a = 5;
+      // let answer;
+      // answer = (a * (a + 1)) / 2;
+      // console.log(answer);
+
+      // niilber2
+
+      // let a = 9;
+      // let answer;
+      // answer = ((a + 1) / 2) ** 2;
+      // console.log(answer);
+
+      // niilber3
+
+      // let a = 6;
+      // let answer;
+      // answer = (a * (a + 1) * (2 * a + 1)) / 6;
+      // console.log(answer);
+
+      //  Сондгой цифрүүдийн тоо
+
+      // let a = 23457;
+      // let b = Math.floor(a / 10000);
+      // let c = Math.ceil(a / 10000);
+      // let da = Math.floor(a % 1000) / 100;
+      // let d = Math.floor(da);
+      // let ea = Math.floor(a % 100) / 10;
+      // let e = Math.floor(ea);
+      // let f = Math.floor(a % 10);
+      // let sum = 0;
+      // if ((b + 1) % 2 == 0) {
+      //   sum++;
+      // }
+      // if ((c + 1) % 2 == 0) {
+      //   sum++;
+      // }
+      // if ((d + 1) % 2 == 0) {
+      //   sum++;
+      // }
+      // if ((e + 1) % 2 == 0) {
+      //   sum++;
+      // }
+      // if ((f + 1) % 2 == 0) {
+      //   sum++;
+      // }
+      // console.log(sum);
+
+      //  Тоон дахь их цифр
+
+      // let a = 456;
+      // let sum = 0;
+      // while (a > 0) {
+      //   let num = a % 10;
+      //   if (num > sum) {
+      //     sum = num;
+      //   }
+      //   a = Math.floor(a / 10);
+      // }
+      // console.log(sum);
+
+      //  Тоон дахь бага цифр
+
+      // let a = 234;
+      // sum = 0;
+      // while (a > 0) {
+      //   let num = a % 10;
+      //   if (num < sum) {
+      //     sum = num;
+      //   }
+      //   a = Math.floor(a / 10);
+      //   console.log(sum);
+      // }
+
+      //  Тонгорогсон тоо
+      // let a = 1234;
+      // sum = 0;
+      // while (a > 0) {
+      //   let num = a % 10;
+      //   sum = sum * 10 + num;
+      //   a = Math.floor(a / 10);
+      // }
+      // console.log(sum);
+
+      //  Палиндром эсэх
+      // let a = 12321;
+      // let c = a;
+      // let b = 0;
+      // while (a > 0) {
+      //   num = a % 10;
+      //   b = b * 10 + num;
+      //   a = Math.floor(a / 10);
+      // }
+      // if (c == b) {
+      //   console.log("yes");
+      // } else {
+      //   console.log("no");
+      // }
+      //  Цифрүүдийн нийлбэр
+      //       let a = 234;
+      //       b = 0;
+      //       while (a > 0) {
+      //         let num = a % 10;
+      //         b = b + num;
+      //         a = Math.floor(a / 10);
+      //       }
+      //       console.log(b);
+
+      //  Хоёрын зэрэгт
+      //       let a = 32;
+      //       while (a % 2 == 0) {
+      //         a = a / 2;
+      //       }
+
+      //       if (a == 1) {
+      //         console.log("yes");
+      //       } else if (a != 1) {
+      //         console.log("no");
+      //       }
+
+      //  Гуравын зэрэгтэд хураа
+      // let a = 36;
+      // let answer;
+      // answer = Math.cbrt(a);
+      // sum = Math.ceil(answer);
+      // console.log(sum);
+
+      //  Тооны факториал
+      // let x = 120;
+      // let sum = 1;
+      // for (let i = 1; i <= x; i++) {
+      //   sum *= i;
+      // }
+      // if (sum == x) {
+      //   console.log(i);
+      // } else if (sum > x) {
+      //   console.log(sum);
+      // }
+
+      //  Цифр давталт
+      //       let a = 4;
+      //       let sum = "";
+      //       for (let i = 0; i <= 4; i++) {
+      //         sum = sum + a;
+      //       }
+      //       console.log(sum);
+
+      //  Цифр хүртэлх
+      // let a = 4;
+      // let b = "";
+      // for (let i = 0; i < 4; i++) {
+      //   console.log(i);
+      // }
+
+      // Array
+      // const friuts = ["apple", "banana", "orange", "kiwi", "mango", "grape"];
+      // console.log(friuts[1]);
+      // console.log(friuts[2], friuts[4]);
+      // console.log(3, 5);
+      // const number = friuts.length;
+      // console.log(number);
+      // for (let index = 0; index < friuts.length; index++) {
+      //   console.log(friuts[index]);
+      // }
+
+      // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      // for (let i = 0; i < numbers.length; i++)
+      //   if (numbers[i] % 2 == 0) {
+      //     console.log("even numbers");
+      //   } else {
+      //     console.log("odd numbers");
+      //   }
+
+      // Өгөгдсөн массивын гишүүдийн нийлбэрийг ол.
+      // let a = [12, 98, 80, 80, 76, 27, 10];
+      // let sum = 0;
+      // for (let i = 0; i < a.length; i++) {
+      //   sum += a[i];
+      // }
+      // console.log(sum);
+
+      // Өгөгдсөн массивын 0-ээс их элементүүдийн нийлбэрийг ол.
+      // let a = [2, -2, -4, 9, 80, 76, 89];
+      // let sum = 0;
+      // for (let i = 0; i < a.length; i++) {
+      //   if (a[i] > 0) {
+      //     sum += a[i];
+      //   }
+      // }
+      // console.log(sum);
+
+      // Өгөгдсөн массивын хамгийн бага элементийг ол.
+      // let a = [12, 45, 67, 2, 67, 4, 7];
+
+      // let min = a[0];
+      // for (let i = 0; i < a.length; i++) {
+      //   if (min > a[i]) {
+      //     min = a[i];
+      //   }
+      // }
+      // console.log(min);
+
+      // Өгөгдсөн массивын хамгийн их элемент хэд дэх нь вэ? Хэрэв хамгийн их элементийн тоо 1-ээс олон бол бага дугаарыг нь хэвлэнэ.
+      // let a = [12, 1, 25, 67, 87, 90, 98];
+      // let max = a[0];
+      // for (let i = 0; i < a.length; i++) {
+      //   if (max < a[i]) {
+      //     max = a[i];
+      //   }
+      // }
+      // console.log(max);
+
+      // 1. Өгөгдсөн Массивийн элэментүүдийг эсрэг дарааллаар буцаа
+
+      let a = [(1, 2, 3, 4)];
+      let sum = a[0];
+      for (let i = -1; i < a.length; i--) {
+        console.log(a[i]);
+      }
+    </script>
+  </body>
+</html>
