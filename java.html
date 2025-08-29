@@ -716,17 +716,245 @@
       // for (let i = 0; i < a.length; i++) {
       //   if (max < a[i]) {
       //     max = a[i];
+      //     max = i;
       //   }
       // }
       // console.log(max);
 
       // 1. Өгөгдсөн Массивийн элэментүүдийг эсрэг дарааллаар буцаа
 
-      let a = [(1, 2, 3, 4)];
-      let sum = a[0];
-      for (let i = -1; i < a.length; i--) {
-        console.log(a[i]);
+      // let a = [1, 2, 3, 4];
+      // for (let i = a.length; i > 0; i--) {
+      //   console.log(i);
+      // }
+
+      // 2. Хөрш элэментүүдээсээ их буюу орой элэментүүдийн тоог буцаа
+      // let a = [1, 5, 1, 2, 15];
+      // let max = a[0];
+      // for (let i = 0; i < a.length; i++) {
+      //   if (a[i + 1] > a[i] && a[i - 1] < a[i]) {
+      //     max++;
+      //   }
+      // }
+      // console.log(max);
+
+      // Өгөгдсөн массивийн бүх хосыг хэвлэ
+      // let a = [1, 2, 4, 5];
+      // for (let i = 0; i < a.length; i++)
+      //   for (let j = i + 1; j < a.length; j++) {
+      //     console.log(a[i], a[j]);
+      //   }
+
+      // Массив болон тоо өгөгдөв. Нийлбэр нь өгөгдсөн тоотой тэнцүү байдаг хосын тоог ол
+      // let a = [1, 2, 3, 4];
+      // let b = 5;
+      // let count = 0;
+      // for (let i = 0; i < a.length; i++)
+      //   for (let j = i + 1; j < a.length; j++) {
+      //     if (a[i] + a[j] == b) {
+      //       count += 1;
+      //     }
+      //   }
+      // console.log(count);
+
+      // Өгөгдсөн 2 массивийн огтлолцлыг ол
+
+      // let a = [1, 2, 4, 5];
+      // let b = [1, 3, 6, 4];
+      // let count = 0;
+      // for (let i = 0; i < a.length; i++)
+      //   for (let j = 0; j < b.length; j++)
+      //     if (a[i] == b[j]) {
+      //       count++;
+      //     }
+      // console.log(count);
+
+      // 6. Өгөгдсөн массивийн сөрөг тоонуудыг зүүн талд нь байрлуул
+
+      // let a = [1, -2, 3, -4, 5, -6, 7];
+      // let b = [];
+      // for (let i = 0; i < a.length; i++) {
+      //   if (a[i] < 0) {
+      //     [a[b], a[i]] = [a[i], a[b]];
+      //     b++;
+      //   }
+      // }
+      // console.log(a);
+
+      // let a = [1, -2, 3, -4, 5, -6, 7];
+      // let b = [];
+      // for (let i = 0; i < a.length; i++) {
+      //   if (a[i] < 0) {
+      //     b.push(a[i]);
+      //   }
+      // }
+
+      // for (let i = 0; i < a.length; i++) {
+      //   if (a[i] > 0) {
+      //     b.push(a[i]);
+      //   }
+      // }
+      // console.log(b);
+
+      // 7. Дараалсан тоонуудаас бүрдэх массив өгөгдөх байсан боловч 1 тоо нь дутуу байв. Тэр тоог ол
+
+      // console.log(sum);
+      // ХИЕХ;
+      // let a = 15;
+      // let b = 9;
+      // let sum = a % b;
+      // let num = b % sum;
+      // let d = (a * b) / num;
+      // console.log(d);
+
+      // 1. Массив болон тоо өгөгдөв. Өгөгдсөн тоо массив байгаа бол дугаарыг нь, байхгүй бол -1 буцаа
+      // function sum(a, b) {
+      //   return a * b;
+      // }
+      // let answer = sum(3, 4);
+      // console.log(answer);
+
+      // function numbers(a, b) {
+      //   for (let i = 0; i < a.length; i++) {
+      //     if (a[i] === b) {
+      //       return i;
+      //     }
+      //   }
+      //   return -1;
+      // }
+      // let a = [5, 10, 15, 20, 25];
+      // let b = 4;
+      // console.log(numbers(a, b));
+
+      // 2. Өгөгдсөн массивын элементүүдийг хойш нь нэг цикл шилжилт хий. Өөрөөр хэлбэл 1-рийг 2-рт, 2-рыг 3-рт, гэх мэт сүүлийн элементийг 1-рт тус тус шилжүүл.
+      // Жич: 1 2 3 4 5 -> 5 1 2 3 4
+
+      // function numbers(a) {
+      //   let last = a[a.length - 1];
+      //   for (let i = a.length - 1; i >= 0; i--) {
+      //     a[i] = a[i - 1];
+      //   }
+      //   a[0] = last;
+      //   return a;
+      // }
+      // a = [1, 2, 3, 4, 5];
+      // console.log(numbers(a));
+
+      // 3. Өгөгдсөн массив өсөх эрэмбээр байвал true үгүй бол false буцаа
+      // function number(a) {
+      //   for (let i = 0; i < a.length; i++) {
+      //     if (a[i] > a[i + 1]) {
+      //       return false;
+      //     }
+      //   }
+      //   return true;
+      // }
+      // let a = [1, 2, 3, 4];
+      // console.log(number(a));
+
+      //       1.Массивын дундаж ба медиан
+      // Массив авч, дундаж (average) болон медианыг буцаа.
+      // Жишээ: [1,2,3,4,5] → {avg: 3, median: 3}
+      // function numbers(a) {
+      //   let sum = 0;
+      //   for (let i = 0; i < a.length; i++) {
+      //     sum += a[i];
+      //   }
+      //   let average = sum / a.length;
+      //   return average;
+      // }
+      // let a = [1, 2, 3, 4, 5];
+      // console.log(numbers(a));
+
+      // function numbers(a) {
+      //   let sum = 0;
+      //   for (let i = 0; i < a.length; i++) {
+      //     sum += a[i];
+      //   }
+      //   let average = sum / a.length;
+      //   let median = a[Math.floor(a.length / 2)];
+      //   return [average, median];
+      // }
+      // let a = [1, 2, 3, 4, 5,];
+      // console.log(numbers(a));
+
+      //      2. String доторх эгшиг тоолох
+      // String авч, хэдэн эгшиг (a, e, i, o, u) байгааг буцаа.
+      // Жишээ: "hello" → 2
+
+      // function text(a) {
+      //   let count = 0;
+      //   for (let i = 0; i < a.length; i++) {
+      //     if (
+      //       "a" === a[i] ||
+      //       "e" === a[i] ||
+      //       "i" === a[i] ||
+      //       "o" === a[i] ||
+      //       "u" === a[i]
+      //     ) {
+      //       count++;
+      //     }
+      //   }
+      //   return count;
+      // }
+
+      // let a = "hello";
+      // console.log(text(a));
+
+      //       3.Anagram шалгах
+      // Хоёр string авч, үсгийн дараалал өөр боловч ижил үсгээр бүтсэн эсэхийг шалга.
+      // Жишээ: "listen" & "silent" → true
+
+      // let string = "listen";
+      // let string2 = "silent";
+
+      // function text(string, string2) {
+      //   if (string.length != string2.length) {
+      //     return false;
+      //   }
+      //   let array = string.split("");
+      //   let Array = string2.split("");
+      //   let sort = array.sort().join("");
+      //   let sort1 = Array.sort().join("");
+
+      //   return sort === sort1;
+      // }
+
+      // console.log(text(string, string2));
+
+      //      4. Тоог Ром тоо болгох
+      // Тоо авч, Ром цифр болгон буцаадаг функц бич.
+      // Жишээ: 14 → XIV, 2025 → MMXXV
+
+      //       function numbers (a){
+
+      //         for ( let i = 0; i < a.length; i++){
+      //           if(
+      // I(a[i]) = 1;
+      //         V = 5;
+      //         X= 10;
+      //         L = 50;
+      //         C = 100;
+      //         D = 500;
+      //         M = 1000;
+      //           )
+      //         }
+
+      //       }
+
+      //       Longest Increasing Subsequence (LIС) – энгийн хувилбар
+      // Массив авч, хамгийн урт өсөх дарааллын уртыг буцаа.
+      // Жишээ: [10,9,2,5,3,7,101,18] → 4 ([2,3,7,101])
+
+      function numbers(a) {
+        count = 0;
+        for (let i = 0; i < a.length; i++) {
+          for (let j = i + 1; j < a.length; j++) {}
+        }
+        return count;
       }
+      let a = [10, 9, 2, 5, 3, 7, 101, 18];
+      console.log(numbers(a));
     </script>
   </body>
 </html>
