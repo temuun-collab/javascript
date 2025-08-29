@@ -601,11 +601,13 @@
       //   b = b * 10 + num;
       //   a = Math.floor(a / 10);
       // }
+
       // if (c == b) {
       //   console.log("yes");
       // } else {
       //   console.log("no");
       // }
+
       //  Цифрүүдийн нийлбэр
       //       let a = 234;
       //       b = 0;
@@ -942,19 +944,46 @@
 
       //       }
 
-      //       Longest Increasing Subsequence (LIС) – энгийн хувилбар
+      // Longest Increasing Subsequence (LIС) – энгийн хувилбар
       // Массив авч, хамгийн урт өсөх дарааллын уртыг буцаа.
-      // Жишээ: [10,9,2,5,3,7,101,18] → 4 ([2,3,7,101])
+      // Жишээ: [10,9,2,5,2,3,7,101,18] → 4 ([2,3,7,101])
 
-      function numbers(a) {
-        count = 0;
-        for (let i = 0; i < a.length; i++) {
-          for (let j = i + 1; j < a.length; j++) {}
+      // function numbers(a) {
+      //   let count = 1;
+      //   let max = 1;
+
+      //   for (let i = 0; i < a.length; i++) {
+      //     if (a[i] < a[i + 1]) {
+      //       count++;
+      //       max = Math.max(count, max);
+      //     } else {
+      //       count = 1;
+      //     }
+      //   }
+      //   return max;
+      // }
+
+      // let a = [10, 9, 2, 11, 80, 97, 90, 91, 92, 93, 94];
+      // console.log(numbers(a));
+
+      //       String доторх хамгийн урт palindrome substring
+      // String авч, хамгийн урт палиндром substring буцаа.
+      // Жишээ: "babad" → "bab" эсвэл "aba"
+
+      let string = "babad";
+      let count = 1;
+      let max = 1;
+      function text(string) {
+        for (let i = 0; i < string.length; i++) {
+          for (let j = string.length; j >= 0; j--) {
+            if (string[i] == string[j]) {
+              max = Math.max(count, max);
+            }
+          }
         }
-        return count;
+        return max;
       }
-      let a = [10, 9, 2, 5, 3, 7, 101, 18];
-      console.log(numbers(a));
+      console.log(text(string));
     </script>
   </body>
 </html>
